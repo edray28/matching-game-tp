@@ -74,6 +74,7 @@ namespace matching_game
             this.btnLevel3.TabIndex = 4;
             this.btnLevel3.Text = "Level 3";
             this.btnLevel3.UseVisualStyleBackColor = false;
+            this.btnLevel3.Click += new System.EventHandler(this.btnLevel3_Click);
             // 
             // btnLevel2
             // 
@@ -86,6 +87,7 @@ namespace matching_game
             this.btnLevel2.TabIndex = 3;
             this.btnLevel2.Text = "Level 2";
             this.btnLevel2.UseVisualStyleBackColor = false;
+            this.btnLevel2.Click += new System.EventHandler(this.btnLevel2_Click);
             // 
             // btnLevel1
             // 
@@ -99,6 +101,7 @@ namespace matching_game
             this.btnLevel1.TabIndex = 1;
             this.btnLevel1.Text = "Level 1";
             this.btnLevel1.UseVisualStyleBackColor = false;
+            this.btnLevel1.Click += new System.EventHandler(this.btnLevel1_Click);
             // 
             // btnTutorial
             // 

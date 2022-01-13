@@ -17,6 +17,23 @@ namespace matching_game
             InitializeComponent();
         }
 
+        private void btnLevel1_Click(object sender, EventArgs e)
+        {
+            Level1 lvl1 = new Level1();
+            lvl1.ShowDialog();
+        }
+
+        private void btnLevel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLevel3_Click(object sender, EventArgs e)
+        {
+            Level3 lvl3 = new Level3();
+            lvl3.ShowDialog();
+        }
+
         private void btnCredits_Click(object sender, EventArgs e)
         {
             Credits credits = new Credits();
@@ -28,5 +45,7 @@ namespace matching_game
             Tutorial tutorial = new Tutorial();
             tutorial.ShowDialog();
         }
+
+        
     }
 }
