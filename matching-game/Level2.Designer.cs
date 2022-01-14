@@ -80,6 +80,7 @@ namespace matching_game
             this.button1.TabIndex = 4;
             this.button1.Text = "Start Game";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.startGame);
             // 
             // pictureBox3
             // 
@@ -90,6 +91,7 @@ namespace matching_game
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 10;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.clickImage);
             // 
             // pictureBox4
             // 
@@ -100,6 +102,7 @@ namespace matching_game
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 9;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.clickImage);
             // 
             // pictureBox2
             // 
@@ -110,6 +113,7 @@ namespace matching_game
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.clickImage);
             // 
             // pictureBox1
             // 
@@ -120,6 +124,7 @@ namespace matching_game
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.clickImage);
             // 
             // pictureBox5
             // 
@@ -130,6 +135,7 @@ namespace matching_game
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 14;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.clickImage);
             // 
             // pictureBox6
             // 
@@ -140,6 +146,7 @@ namespace matching_game
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 13;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.clickImage);
             // 
             // pictureBox7
             // 
@@ -150,6 +157,7 @@ namespace matching_game
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 12;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.clickImage);
             // 
             // pictureBox8
             // 
@@ -160,6 +168,7 @@ namespace matching_game
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 11;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.clickImage);
             // 
             // pictureBox9
             // 
@@ -170,6 +179,7 @@ namespace matching_game
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 18;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.clickImage);
             // 
             // pictureBox10
             // 
@@ -180,6 +190,7 @@ namespace matching_game
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 17;
             this.pictureBox10.TabStop = false;
+            this.pictureBox10.Click += new System.EventHandler(this.clickImage);
             // 
             // pictureBox11
             // 
@@ -190,6 +201,7 @@ namespace matching_game
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 16;
             this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.clickImage);
             // 
             // pictureBox12
             // 
@@ -200,6 +212,7 @@ namespace matching_game
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 15;
             this.pictureBox12.TabStop = false;
+            this.pictureBox12.Click += new System.EventHandler(this.clickImage);
             // 
             // flowLayoutPanel1
             // 

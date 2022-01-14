@@ -57,16 +57,17 @@ namespace matching_game
             this.button1.TabIndex = 0;
             this.button1.Text = "Start Game";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.startGame);
             // 
             // lblTimer
             // 
             this.lblTimer.AutoSize = true;
             this.lblTimer.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTimer.Location = new System.Drawing.Point(166, 253);
+            this.lblTimer.Location = new System.Drawing.Point(132, 256);
             this.lblTimer.Name = "lblTimer";
-            this.lblTimer.Size = new System.Drawing.Size(88, 37);
+            this.lblTimer.Size = new System.Drawing.Size(158, 37);
             this.lblTimer.TabIndex = 1;
-            this.lblTimer.Text = "00:60";
+            this.lblTimer.Text = "60 seconds";
             // 
             // pictureBox4
             // 
@@ -77,6 +78,7 @@ namespace matching_game
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 7;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.clickImage);
             // 
             // pictureBox5
             // 
@@ -87,6 +89,7 @@ namespace matching_game
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 6;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.clickImage);
             // 
             // pictureBox6
             // 
@@ -97,6 +100,7 @@ namespace matching_game
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 5;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.clickImage);
             // 
             // pictureBox3
             // 
@@ -107,6 +111,7 @@ namespace matching_game
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.clickImage);
             // 
             // pictureBox2
             // 
@@ -117,6 +122,7 @@ namespace matching_game
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.clickImage);
             // 
             // pictureBox1
             // 
@@ -127,6 +133,7 @@ namespace matching_game
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.clickImage);
             // 
             // flowLayoutPanel1
             // 

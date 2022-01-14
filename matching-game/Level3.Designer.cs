@@ -89,6 +89,7 @@ namespace matching_game
             this.lblTimer.Size = new System.Drawing.Size(202, 45);
             this.lblTimer.TabIndex = 2;
             this.lblTimer.Text = "180 seconds";
+            this.lblTimer.Click += new System.EventHandler(this.CLICKTIMER_TICK);
             // 
             // pictureBox1
             // 

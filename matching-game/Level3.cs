@@ -12,12 +12,17 @@ namespace matching_game
 {
     public partial class Level3 : Form
     {
+        public Level3()
+        {
+            InitializeComponent();
+        }
+
         //timer for Click and countdown
         Timer clickTimer = new Timer();
         Timer timer = new Timer { Interval = 1000 };
 
         //random variable for randomizing match in pictureboxes
-        Random rnd = new Random();
+        Random rand = new Random();
 
         //first guess of image
         PictureBox firstGuess;
@@ -27,11 +32,6 @@ namespace matching_game
         
         //time var for countdown lvl3
        private int time = 180;
-
-        public Level3()
-        {
-            InitializeComponent();
-        }
 
         //PictureBoxes stores object arrays 
         private PictureBox[] pictureBoxes
@@ -107,7 +107,7 @@ namespace matching_game
 
             do
             {
-                num = rnd.Next(0, pictureBoxes.Count());
+                num = rand.Next(0, pictureBoxes.Count());
             }
             while (pictureBoxes[num].Tag != null);
             return pictureBoxes[num];
@@ -123,7 +123,6 @@ namespace matching_game
             }
         }
 
-        //stops timer and hides images and enables start game button
         private void CLICKTIMER_TICK(object sender, EventArgs e)
         {
             HideImages();
@@ -162,8 +161,16 @@ namespace matching_game
 
             firstGuess = null;
             if (pictureBoxes.Any(p => p.Visible)) return;
-            MessageBox.Show("CONGRATULATIONS!! YOU WIN");
-            ResetImages();
+            MessageBox.Show("CONGRATULATIONS! YOU WIN");
+            DialogResult TryAgain = MessageBox.Show("Try again?", "Congratulations: you finished the level with " + time.ToString() + " seconds left", MessageBoxButtons.YesNo);
+            if (TryAgain == DialogResult.Yes)
+            {
+                ResetImages();
+            }
+            else if (TryAgain == DialogResult.No)
+            {
+                Close();
+            }
 
         }
 
