@@ -25,7 +25,8 @@ namespace matching_game
 
         private void btnLevel2_Click(object sender, EventArgs e)
         {
-
+            Level2 lvl2 = new Level2();
+            lvl2.ShowDialog();
         }
 
         private void btnLevel3_Click(object sender, EventArgs e)

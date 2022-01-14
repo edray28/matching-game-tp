@@ -12,3 +12,4 @@ C:\Users\Edray\Desktop\matching-game\matching-game\obj\Debug\matching_game.Credi
 C:\Users\Edray\Desktop\matching-game\matching-game\obj\Debug\matching_game.Tutorial.resources
 C:\Users\Edray\Desktop\matching-game\matching-game\obj\Debug\matching_game.Level1.resources
 C:\Users\Edray\Desktop\matching-game\matching-game\obj\Debug\matching_game.Level3.resources
+C:\Users\Edray\Desktop\matching-game\matching-game\obj\Debug\matching_game.Level2.resources
