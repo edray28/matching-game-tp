@@ -12,24 +12,34 @@ namespace matching_game
 {
     public partial class Level3 : Form
     {
-        bool allowClick = false;
-        PictureBox firstGuess;
-        Random rnd = new Random();
+        //timer for Click and countdown
         Timer clickTimer = new Timer();
-        int time = 180;
         Timer timer = new Timer { Interval = 1000 };
+
+        //random variable for randomizing match in pictureboxes
+        Random rnd = new Random();
+
+        //first guess of image
+        PictureBox firstGuess;
+
+        //Allow click button after start?
+        bool allowClick = false;
+        
+        //time var for countdown lvl3
+       private int time = 180;
 
         public Level3()
         {
             InitializeComponent();
-
         }
 
+        //PictureBoxes stores object arrays 
         private PictureBox[] pictureBoxes
         {
             get { return Controls.OfType<PictureBox>().ToArray(); }
         }
 
+        //loop and return images pictureBoxes from Resources in solution folder
         private static IEnumerable<Image> images
         {
             get
@@ -48,6 +58,7 @@ namespace matching_game
             }
         }
 
+        //start timer after being called in the startGame function
         private void startGameTimer()
         {
             timer.Start();
@@ -57,7 +68,7 @@ namespace matching_game
                 if (time < 0)
                 {
                     timer.Stop();
-                    MessageBox.Show("Out of time");
+                    MessageBox.Show("YOU LOSE! Out of time");
                     ResetImages();
                 }
 
@@ -66,6 +77,7 @@ namespace matching_game
             };
         }
 
+        //reset images after timer, level is finished and called after pick wrong match 
         private void ResetImages()
         {
             foreach(var pic in pictureBoxes)
@@ -79,6 +91,7 @@ namespace matching_game
             timer.Start();
         }
 
+        //Hide images in pictureboxes by iterating replacing all resource with another resource (question.png)
         private void HideImages()
         {
             foreach(var pic in pictureBoxes)
@@ -86,7 +99,8 @@ namespace matching_game
                 pic.Image = Properties.Resources.question;
             }
         }
-
+        
+        //Sets images in picturebox randomly function  
         private PictureBox getFreeSlot()
         {
             int num;
@@ -99,6 +113,7 @@ namespace matching_game
             return pictureBoxes[num];
         }
 
+        //Iterate the getfreeslots each image
         private void setRandomImages()
         {
             foreach (var image in images)
@@ -108,6 +123,7 @@ namespace matching_game
             }
         }
 
+        //stops timer and hides images and enables start game button
         private void CLICKTIMER_TICK(object sender, EventArgs e)
         {
             HideImages();
@@ -115,6 +131,7 @@ namespace matching_game
             clickTimer.Stop();
         }
 
+        //Match image by pairs and checks images left
         private void clickImage(object sender, EventArgs e)
         {
             if (!allowClick) return;
@@ -145,11 +162,12 @@ namespace matching_game
 
             firstGuess = null;
             if (pictureBoxes.Any(p => p.Visible)) return;
-            MessageBox.Show("YOU WIN");
+            MessageBox.Show("CONGRATULATIONS!! YOU WIN");
             ResetImages();
 
         }
 
+        //Start game function in button that sets images, timer and click 
         private void startGame(object sender, EventArgs e)
         {
             allowClick = true;

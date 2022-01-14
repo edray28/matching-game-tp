@@ -54,7 +54,7 @@ namespace matching_game
             // 
             this.btnCredits.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnCredits.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCredits.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCredits.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCredits.Location = new System.Drawing.Point(250, 322);
             this.btnCredits.Name = "btnCredits";
             this.btnCredits.Size = new System.Drawing.Size(117, 52);
@@ -67,7 +67,7 @@ namespace matching_game
             // 
             this.btnLevel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnLevel3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLevel3.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLevel3.Font = new System.Drawing.Font("Garamond", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLevel3.Location = new System.Drawing.Point(131, 236);
             this.btnLevel3.Name = "btnLevel3";
             this.btnLevel3.Size = new System.Drawing.Size(117, 52);
@@ -78,10 +78,10 @@ namespace matching_game
             // 
             // btnLevel2
             // 
-            this.btnLevel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnLevel2.BackColor = System.Drawing.Color.DarkKhaki;
             this.btnLevel2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLevel2.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLevel2.Location = new System.Drawing.Point(131, 125);
+            this.btnLevel2.Font = new System.Drawing.Font("Garamond", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLevel2.Location = new System.Drawing.Point(131, 127);
             this.btnLevel2.Name = "btnLevel2";
             this.btnLevel2.Size = new System.Drawing.Size(117, 52);
             this.btnLevel2.TabIndex = 3;
@@ -94,7 +94,7 @@ namespace matching_game
             this.btnLevel1.BackColor = System.Drawing.Color.LimeGreen;
             this.btnLevel1.FlatAppearance.BorderSize = 0;
             this.btnLevel1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLevel1.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLevel1.Font = new System.Drawing.Font("Garamond", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLevel1.Location = new System.Drawing.Point(131, 18);
             this.btnLevel1.Name = "btnLevel1";
             this.btnLevel1.Size = new System.Drawing.Size(117, 52);
@@ -107,7 +107,7 @@ namespace matching_game
             // 
             this.btnTutorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnTutorial.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnTutorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTutorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTutorial.Location = new System.Drawing.Point(15, 322);
             this.btnTutorial.Name = "btnTutorial";
             this.btnTutorial.Size = new System.Drawing.Size(117, 52);
@@ -134,7 +134,7 @@ namespace matching_game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(413, 477);
             this.Controls.Add(this.lblMenuTitle);
             this.Controls.Add(this.panel1);
