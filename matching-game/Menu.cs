@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace matching_game
 {
@@ -15,6 +16,8 @@ namespace matching_game
         public Menu()
         {
             InitializeComponent();
+            SoundPlayer menusound = new SoundPlayer(Properties.Resources.bg);
+            menusound.Play();
         }
 
         private void btnLevel1_Click(object sender, EventArgs e)
