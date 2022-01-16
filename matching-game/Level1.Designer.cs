@@ -72,7 +72,7 @@ namespace matching_game
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.SystemColors.Info;
-            this.pictureBox4.Location = new System.Drawing.Point(310, 139);
+            this.pictureBox4.Location = new System.Drawing.Point(290, 139);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(100, 100);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -94,7 +94,7 @@ namespace matching_game
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.SystemColors.Info;
-            this.pictureBox6.Location = new System.Drawing.Point(12, 139);
+            this.pictureBox6.Location = new System.Drawing.Point(30, 139);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(100, 100);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -105,7 +105,7 @@ namespace matching_game
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.SystemColors.Info;
-            this.pictureBox3.Location = new System.Drawing.Point(310, 8);
+            this.pictureBox3.Location = new System.Drawing.Point(290, 8);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(100, 100);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -127,7 +127,7 @@ namespace matching_game
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.Info;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 8);
+            this.pictureBox1.Location = new System.Drawing.Point(30, 8);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -148,7 +148,7 @@ namespace matching_game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(424, 353);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox5);
