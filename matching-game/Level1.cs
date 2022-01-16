@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,6 +18,10 @@ namespace matching_game
         {
             InitializeComponent();
         }
+
+        //Sound Effects
+        SoundPlayer victory = new SoundPlayer(Properties.Resources.correct);
+        SoundPlayer fail = new SoundPlayer(Properties.Resources.wrong1);
 
         //timer for Click and countdown
         Timer clickTimer = new Timer();
@@ -64,6 +69,7 @@ namespace matching_game
                 if (time < 0)
                 {
                     timer.Stop();
+                    fail.Play();
                     MessageBox.Show("YOU LOSE! Out of time");
                     ResetImages();
                 }
@@ -159,11 +165,13 @@ namespace matching_game
             if (pictureBoxes.Any(p => p.Visible)) return;
             clickTimer.Stop();
             timer.Stop();
+            victory.Play();
             MessageBox.Show("Great Job! YOU WIN");
-            DialogResult TryAgain = MessageBox.Show("Try again?", "Congratulations: you finished the level with " + time.ToString() + " seconds left", MessageBoxButtons.YesNo);
+            DialogResult TryAgain = MessageBox.Show("Try again?", "Congratulations: you finished the level with " + time.ToString() + " seconds left", MessageBoxButtons.YesNo);        
             if (TryAgain == DialogResult.Yes)
             {
                 ResetImages();
+                victory.Stop();
             }
             else if (TryAgain == DialogResult.No)
             {

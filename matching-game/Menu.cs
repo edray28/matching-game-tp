@@ -13,27 +13,31 @@ namespace matching_game
 {
     public partial class Menu : Form
     {
+        SoundPlayer menusound = new SoundPlayer(Properties.Resources.bg);
+        
         public Menu()
         {
             InitializeComponent();
-            SoundPlayer menusound = new SoundPlayer(Properties.Resources.bg);
             menusound.Play();
         }
 
         private void btnLevel1_Click(object sender, EventArgs e)
         {
+            menusound.Play();
             Level1 lvl1 = new Level1();
             lvl1.ShowDialog();
         }
 
         private void btnLevel2_Click(object sender, EventArgs e)
         {
+            menusound.Play();
             Level2 lvl2 = new Level2();
             lvl2.ShowDialog();
         }
 
         private void btnLevel3_Click(object sender, EventArgs e)
         {
+            menusound.Play();
             Level3 lvl3 = new Level3();
             lvl3.ShowDialog();
         }

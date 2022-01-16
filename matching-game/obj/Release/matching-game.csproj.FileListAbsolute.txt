@@ -12,3 +12,4 @@ C:\Users\Edray\Desktop\matching-game\matching-game\obj\Release\matching-game.csp
 C:\Users\Edray\Desktop\matching-game\matching-game\obj\Release\matching-game.csproj.CoreCompileInputs.cache
 C:\Users\Edray\Desktop\matching-game\matching-game\obj\Release\matching-game.exe
 C:\Users\Edray\Desktop\matching-game\matching-game\obj\Release\matching-game.pdb
+C:\Users\Edray\Desktop\matching-game\matching-game\obj\Release\matching-game.csproj.AssemblyReference.cache
