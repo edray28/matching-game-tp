@@ -27,7 +27,7 @@ namespace matching_game
         Timer clickTimer = new Timer();
         Timer timer = new Timer { Interval = 1000 };
 
-        //random variable for randomizing match in pictureboxes
+        //random variable for randomizing match in pictureboxes and quotes
         Random rand = new Random();
 
         //first guess of image
@@ -80,7 +80,7 @@ namespace matching_game
         }
 
         //reset images after timer, level is finished and called after pick wrong match 
-        private void ResetImages()
+        public void ResetImages()
         {
             foreach (var pic in pictureBoxes)
             {
@@ -166,17 +166,22 @@ namespace matching_game
             clickTimer.Stop();
             timer.Stop();
             victory.Play();
-            MessageBox.Show("Great Job! YOU WIN");
-            DialogResult TryAgain = MessageBox.Show("Try again?", "Congratulations: you finished the level with " + time.ToString() + " seconds left", MessageBoxButtons.YesNo);        
-            if (TryAgain == DialogResult.Yes)
+
+            //Win texts
+            string[] win = { "Good Job!", "Well Done!", "Congratulations", "Bravo!", "Superb!", "Awesome!", "Remarkable!", "Epic!", "Brilliant!" };
+            String quote = win[rand.Next(win.Length)];
+            DialogResult TryAgain = MessageBox.Show(quote, "You finished the level with " + time.ToString() + " seconds left", MessageBoxButtons.RetryCancel);
+
+            if (TryAgain == DialogResult.Retry)
             {
                 ResetImages();
                 victory.Stop();
             }
-            else if (TryAgain == DialogResult.No)
+            else if (TryAgain == DialogResult.Cancel)
             {
                 Close();
             }
+
         }
 
         //Start game function in button that sets images, timer and click 
@@ -191,5 +196,9 @@ namespace matching_game
             button1.Enabled = false;
         }
 
+        private void buttonHover(object sender, EventArgs e)
+        {
+
+        }
     }
 }

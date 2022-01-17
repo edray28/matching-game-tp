@@ -194,5 +194,8 @@
   <ItemGroup>
     <None Include="Properties\wrong.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\tutorial.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

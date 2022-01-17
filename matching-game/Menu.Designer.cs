@@ -67,7 +67,8 @@ namespace matching_game
             // 
             this.btnLevel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnLevel3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLevel3.Font = new System.Drawing.Font("Helvetica", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLevel3.Font = new System.Drawing.Font("Bebas Neue", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLevel3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnLevel3.Location = new System.Drawing.Point(263, 7);
             this.btnLevel3.Name = "btnLevel3";
             this.btnLevel3.Size = new System.Drawing.Size(59, 52);
@@ -80,7 +81,8 @@ namespace matching_game
             // 
             this.btnLevel2.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnLevel2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLevel2.Font = new System.Drawing.Font("Helvetica", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLevel2.Font = new System.Drawing.Font("Bebas Neue", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLevel2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnLevel2.Location = new System.Drawing.Point(178, 8);
             this.btnLevel2.Name = "btnLevel2";
             this.btnLevel2.Size = new System.Drawing.Size(59, 52);
@@ -94,7 +96,8 @@ namespace matching_game
             this.btnLevel1.BackColor = System.Drawing.Color.LawnGreen;
             this.btnLevel1.FlatAppearance.BorderSize = 0;
             this.btnLevel1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLevel1.Font = new System.Drawing.Font("Helvetica", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLevel1.Font = new System.Drawing.Font("Bebas Neue", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLevel1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnLevel1.Location = new System.Drawing.Point(90, 8);
             this.btnLevel1.Name = "btnLevel1";
             this.btnLevel1.Size = new System.Drawing.Size(59, 52);
@@ -106,13 +109,14 @@ namespace matching_game
             // btnTutorial
             // 
             this.btnTutorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnTutorial.BackgroundImage = global::matching_game.Properties.Resources.tutorial;
+            this.btnTutorial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnTutorial.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnTutorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTutorial.Location = new System.Drawing.Point(11, 7);
+            this.btnTutorial.Location = new System.Drawing.Point(11, 8);
             this.btnTutorial.Name = "btnTutorial";
-            this.btnTutorial.Size = new System.Drawing.Size(59, 52);
+            this.btnTutorial.Size = new System.Drawing.Size(54, 53);
             this.btnTutorial.TabIndex = 5;
-            this.btnTutorial.Text = "Tutorial";
             this.btnTutorial.UseVisualStyleBackColor = false;
             this.btnTutorial.Click += new System.EventHandler(this.btnTutorial_Click);
             // 

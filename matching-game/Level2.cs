@@ -164,15 +164,19 @@ namespace matching_game
 
             firstGuess = null;
             if (pictureBoxes.Any(p => p.Visible)) return;
+            timer.Stop();
             victory.Play();
-            MessageBox.Show("Well Done! YOU WIN");
-            DialogResult TryAgain = MessageBox.Show("Try again?", "Congratulations: you finished the level with " + time.ToString() + " seconds left", MessageBoxButtons.YesNo);
-            if (TryAgain == DialogResult.Yes)
+
+            //Win texts
+            string[] win = { "Good Job!", "Well Done!", "Congratulations", "Bravo!", "Superb!", "Awesome!", "Remarkable!", "Epic!", "Brilliant!" };
+            String quote = win[rand.Next(win.Length)];
+            DialogResult TryAgain = MessageBox.Show(quote, "You finished the level with " + time.ToString() + " seconds left", MessageBoxButtons.RetryCancel);
+            if (TryAgain == DialogResult.Retry)
             {
                 ResetImages();
                 victory.Stop();
             }
-            else if (TryAgain == DialogResult.No)
+            else if (TryAgain == DialogResult.Cancel)
             {
                 Close();
             }
