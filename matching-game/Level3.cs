@@ -79,7 +79,7 @@ namespace matching_game
                 }
 
                 var ssTime = TimeSpan.FromSeconds(time);
-                lblTimer.Text = time.ToString() + " seconds";
+                lblTimer.Text = time.ToString() + " sec";
             };
         }
 

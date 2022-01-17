@@ -29,8 +29,6 @@ namespace matching_game
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTimer = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -43,7 +41,8 @@ namespace matching_game
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lblTimer = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -58,34 +57,10 @@ namespace matching_game
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblTimer
-            // 
-            this.lblTimer.AutoSize = true;
-            this.lblTimer.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTimer.ForeColor = System.Drawing.Color.Black;
-            this.lblTimer.Location = new System.Drawing.Point(187, 5);
-            this.lblTimer.Name = "lblTimer";
-            this.lblTimer.Size = new System.Drawing.Size(202, 45);
-            this.lblTimer.TabIndex = 3;
-            this.lblTimer.Text = "120 seconds";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.SpringGreen;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(205, 504);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(138, 48);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Start Game";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.startGame);
-            // 
             // pictureBox3
             // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.Window;
-            this.pictureBox3.Location = new System.Drawing.Point(457, 73);
+            this.pictureBox3.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.pictureBox3.Location = new System.Drawing.Point(330, 39);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(100, 100);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -95,8 +70,8 @@ namespace matching_game
             // 
             // pictureBox4
             // 
-            this.pictureBox4.BackColor = System.Drawing.SystemColors.Window;
-            this.pictureBox4.Location = new System.Drawing.Point(309, 73);
+            this.pictureBox4.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.pictureBox4.Location = new System.Drawing.Point(224, 39);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(100, 100);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -106,8 +81,8 @@ namespace matching_game
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.Window;
-            this.pictureBox2.Location = new System.Drawing.Point(162, 73);
+            this.pictureBox2.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.pictureBox2.Location = new System.Drawing.Point(118, 39);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 100);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -117,8 +92,8 @@ namespace matching_game
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.pictureBox1.Location = new System.Drawing.Point(14, 73);
+            this.pictureBox1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 39);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -128,8 +103,8 @@ namespace matching_game
             // 
             // pictureBox5
             // 
-            this.pictureBox5.BackColor = System.Drawing.SystemColors.Window;
-            this.pictureBox5.Location = new System.Drawing.Point(457, 220);
+            this.pictureBox5.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.pictureBox5.Location = new System.Drawing.Point(330, 145);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(100, 100);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -139,8 +114,8 @@ namespace matching_game
             // 
             // pictureBox6
             // 
-            this.pictureBox6.BackColor = System.Drawing.SystemColors.Window;
-            this.pictureBox6.Location = new System.Drawing.Point(309, 220);
+            this.pictureBox6.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.pictureBox6.Location = new System.Drawing.Point(224, 145);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(100, 100);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -150,8 +125,8 @@ namespace matching_game
             // 
             // pictureBox7
             // 
-            this.pictureBox7.BackColor = System.Drawing.SystemColors.Window;
-            this.pictureBox7.Location = new System.Drawing.Point(162, 220);
+            this.pictureBox7.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.pictureBox7.Location = new System.Drawing.Point(118, 145);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(100, 100);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -161,8 +136,8 @@ namespace matching_game
             // 
             // pictureBox8
             // 
-            this.pictureBox8.BackColor = System.Drawing.SystemColors.Window;
-            this.pictureBox8.Location = new System.Drawing.Point(14, 220);
+            this.pictureBox8.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.pictureBox8.Location = new System.Drawing.Point(12, 145);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(100, 100);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -172,8 +147,8 @@ namespace matching_game
             // 
             // pictureBox9
             // 
-            this.pictureBox9.BackColor = System.Drawing.SystemColors.Window;
-            this.pictureBox9.Location = new System.Drawing.Point(457, 377);
+            this.pictureBox9.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.pictureBox9.Location = new System.Drawing.Point(330, 251);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(100, 100);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -183,8 +158,8 @@ namespace matching_game
             // 
             // pictureBox10
             // 
-            this.pictureBox10.BackColor = System.Drawing.SystemColors.Window;
-            this.pictureBox10.Location = new System.Drawing.Point(309, 377);
+            this.pictureBox10.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.pictureBox10.Location = new System.Drawing.Point(224, 251);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(100, 100);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -194,8 +169,8 @@ namespace matching_game
             // 
             // pictureBox11
             // 
-            this.pictureBox11.BackColor = System.Drawing.SystemColors.Window;
-            this.pictureBox11.Location = new System.Drawing.Point(162, 377);
+            this.pictureBox11.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.pictureBox11.Location = new System.Drawing.Point(118, 251);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(100, 100);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -205,8 +180,8 @@ namespace matching_game
             // 
             // pictureBox12
             // 
-            this.pictureBox12.BackColor = System.Drawing.SystemColors.Window;
-            this.pictureBox12.Location = new System.Drawing.Point(14, 377);
+            this.pictureBox12.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.pictureBox12.Location = new System.Drawing.Point(12, 251);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(100, 100);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -214,21 +189,39 @@ namespace matching_game
             this.pictureBox12.TabStop = false;
             this.pictureBox12.Click += new System.EventHandler(this.clickImage);
             // 
-            // flowLayoutPanel1
+            // button1
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
-            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 57);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(577, 439);
-            this.flowLayoutPanel1.TabIndex = 19;
+            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Goodbye Despair", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.Window;
+            this.button1.Location = new System.Drawing.Point(155, 360);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(134, 45);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Start Game";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.startGame);
+            // 
+            // lblTimer
+            // 
+            this.lblTimer.AutoSize = true;
+            this.lblTimer.Font = new System.Drawing.Font("ObelixPro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTimer.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblTimer.Location = new System.Drawing.Point(185, 9);
+            this.lblTimer.Name = "lblTimer";
+            this.lblTimer.Size = new System.Drawing.Size(84, 19);
+            this.lblTimer.TabIndex = 20;
+            this.lblTimer.Text = "120 sec";
             // 
             // Level2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkKhaki;
-            this.ClientSize = new System.Drawing.Size(575, 564);
+            this.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.ClientSize = new System.Drawing.Size(442, 414);
+            this.Controls.Add(this.lblTimer);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox11);
@@ -241,9 +234,6 @@ namespace matching_game
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.lblTimer);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Level2";
@@ -267,9 +257,6 @@ namespace matching_game
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblTimer;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -282,6 +269,7 @@ namespace matching_game
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblTimer;
     }
 }

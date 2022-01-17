@@ -17,7 +17,6 @@ C:\Users\Edray\source\repos\matching-game-tp\matching-game\bin\Debug\matching-ga
 C:\Users\Edray\source\repos\matching-game-tp\matching-game\bin\Debug\matching-game.exe
 C:\Users\Edray\source\repos\matching-game-tp\matching-game\bin\Debug\matching-game.pdb
 C:\Users\Edray\source\repos\matching-game-tp\matching-game\obj\Debug\matching-game.csproj.AssemblyReference.cache
-C:\Users\Edray\source\repos\matching-game-tp\matching-game\obj\Debug\matching_game.Credits.resources
 C:\Users\Edray\source\repos\matching-game-tp\matching-game\obj\Debug\matching_game.Level1.resources
 C:\Users\Edray\source\repos\matching-game-tp\matching-game\obj\Debug\matching_game.Level2.resources
 C:\Users\Edray\source\repos\matching-game-tp\matching-game\obj\Debug\matching_game.Level3.resources
@@ -28,3 +27,4 @@ C:\Users\Edray\source\repos\matching-game-tp\matching-game\obj\Debug\matching-ga
 C:\Users\Edray\source\repos\matching-game-tp\matching-game\obj\Debug\matching-game.csproj.CoreCompileInputs.cache
 C:\Users\Edray\source\repos\matching-game-tp\matching-game\obj\Debug\matching-game.exe
 C:\Users\Edray\source\repos\matching-game-tp\matching-game\obj\Debug\matching-game.pdb
+C:\Users\Edray\source\repos\matching-game-tp\matching-game\obj\Debug\matching_game.Credits.resources
