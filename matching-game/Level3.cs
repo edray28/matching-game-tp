@@ -178,6 +178,8 @@ namespace matching_game
             {
                 ResetImages();
                 victory.Stop();
+                Menu sound = new Menu();
+                sound.menusound.Play();
             }
             else if (TryAgain == DialogResult.Cancel)
             {

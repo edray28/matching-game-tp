@@ -13,7 +13,7 @@ namespace matching_game
 {
     public partial class Menu : Form
     {
-        SoundPlayer menusound = new SoundPlayer(Properties.Resources.bg);
+       public SoundPlayer menusound = new SoundPlayer(Properties.Resources.bg);
         
         public Menu()
         {
