@@ -5,7 +5,6 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Media;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -17,10 +16,7 @@ namespace matching_game
         {
             InitializeComponent();
         }
-
-        //Sound Effects
-        SoundPlayer victory = new SoundPlayer(Properties.Resources.correct);
-        SoundPlayer fail = new SoundPlayer(Properties.Resources.wrong1);
+        Menu sound = new Menu();
 
         //timer for Click and countdown
         Timer clickTimer = new Timer();
@@ -73,7 +69,7 @@ namespace matching_game
                 if (time < 0)
                 {
                     timer.Stop();
-                    fail.Play();
+                    sound.fail.Play();
                     MessageBox.Show("YOU LOSE! Out of time");
                     ResetImages();
                 }
@@ -168,7 +164,7 @@ namespace matching_game
             firstGuess = null;
             if (pictureBoxes.Any(p => p.Visible)) return;
             timer.Stop();
-            victory.Play();
+            sound.victory.Play();
 
             //Win texts
             string[] win = { "Good Job!", "Well Done!", "Congratulations", "Bravo!", "Superb!", "Awesome!", "Remarkable!", "Epic!", "Brilliant!" };
@@ -177,8 +173,7 @@ namespace matching_game
             if (TryAgain == DialogResult.Retry)
             {
                 ResetImages();
-                victory.Stop();
-                Menu sound = new Menu();
+                sound.victory.Stop();
                 sound.menusound.Play();
             }
             else if (TryAgain == DialogResult.Cancel)

@@ -13,8 +13,11 @@ namespace matching_game
 {
     public partial class Menu : Form
     {
-       public SoundPlayer menusound = new SoundPlayer(Properties.Resources.bg);
-        
+        //Sound Effects
+        public SoundPlayer menusound = new SoundPlayer(Properties.Resources.bg);
+        public SoundPlayer victory = new SoundPlayer(Properties.Resources.correct);
+        public SoundPlayer fail = new SoundPlayer(Properties.Resources.wrong1);
+
         public Menu()
         {
             InitializeComponent();
