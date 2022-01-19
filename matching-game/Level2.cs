@@ -18,30 +18,20 @@ namespace matching_game
         }
 
         Menu sound = new Menu();
-
-        //timer for Click and countdown
         Timer clickTimer = new Timer();
         Timer timer = new Timer { Interval = 1000 };
-
-        //random variable for randomizing match in pictureboxes
         Random rand = new Random();
-
-        //first guess of image
         PictureBox firstGuess;
-
-        //Allow click button after start?
         bool allowClick = false;
-
-        //time var for countdown lvl2
         private int time = 120;
 
-        //PictureBoxes stores object arrays 
+
         private PictureBox[] pictureBoxes
         {
             get { return Controls.OfType<PictureBox>().ToArray(); }
         }
 
-        //loop and return images pictureBoxes from Resources in solution folder
+        //More resources added
         private static IEnumerable<Image> images
         {
             get
@@ -58,7 +48,6 @@ namespace matching_game
             }
         }
 
-        //start timer after being called in the startGame function
         private void startGameTimer()
         {
             timer.Start();
@@ -78,7 +67,6 @@ namespace matching_game
             };
         }
 
-        //reset images after timer, level is finished and called after pick wrong match 
         private void ResetImages()
         {
             foreach (var pic in pictureBoxes)
@@ -92,7 +80,6 @@ namespace matching_game
             timer.Start();
         }
 
-        //Hide images in pictureboxes by iterating replacing all resource with another resource (question.png)
         private void HideImages()
         {
             foreach (var pic in pictureBoxes)
@@ -101,7 +88,6 @@ namespace matching_game
             }
         }
 
-        //Sets images in picturebox randomly function  
         private PictureBox getFreeSlot()
         {
             int num;
@@ -114,7 +100,6 @@ namespace matching_game
             return pictureBoxes[num];
         }
 
-        //Iterate the getfreeslots each image
         private void setRandomImages()
         {
             foreach (var image in images)
@@ -131,7 +116,6 @@ namespace matching_game
             clickTimer.Stop();
         }
 
-        //Match image by pairs and checks images left
         private void clickImage(object sender, EventArgs e)
         {
             if (!allowClick) return;
@@ -165,7 +149,6 @@ namespace matching_game
             timer.Stop();
             sound.victory.Play();
 
-            //Win texts
             string[] win = { "Good Job!", "Well Done!", "Congratulations", "Bravo!", "Superb!", "Awesome!", "Remarkable!", "Epic!", "Brilliant!" };
             String quote = win[rand.Next(win.Length)];
             DialogResult TryAgain = MessageBox.Show(quote, "You finished the level with " + time.ToString() + " seconds left", MessageBoxButtons.RetryCancel);
@@ -182,7 +165,6 @@ namespace matching_game
 
         }
 
-        //Start game function in button that sets images, timer and click 
         private void startGame(object sender, EventArgs e)
         {
             allowClick = true;
@@ -193,7 +175,5 @@ namespace matching_game
             clickTimer.Tick += CLICKTIMER_TICK;
             button1.Enabled = false;
         }
-
-
     }
 }

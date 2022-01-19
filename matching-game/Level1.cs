@@ -17,6 +17,8 @@ namespace matching_game
         {
             InitializeComponent();
         }
+
+        //menu object for sounds
         Menu sound = new Menu();
 
         //timer for Click and countdown
@@ -26,10 +28,10 @@ namespace matching_game
         //random variable for randomizing match in pictureboxes and quotes
         Random rand = new Random();
 
-        //first guess of image
+        //first click of image
         PictureBox firstGuess;
 
-        //Allow click button after start?
+        //Allow click button after pressing start
         bool allowClick = false;
 
         //time var for countdown lvl1
@@ -41,7 +43,7 @@ namespace matching_game
             get { return Controls.OfType<PictureBox>().ToArray(); }
         }
 
-        //loop and return images pictureBoxes from Resources in solution folder
+        //iterate and return new images objects pictureBoxes from Resources in solution folder
         private static IEnumerable<Image> images
         {
             get
@@ -69,7 +71,7 @@ namespace matching_game
                     MessageBox.Show("YOU LOSE! Out of time");
                     ResetImages();
                 }
-
+                //realtime seconds
                 var ssTime = TimeSpan.FromSeconds(time);
                 lblTimer.Text = time.ToString() + " sec";
             };
@@ -98,7 +100,7 @@ namespace matching_game
             }
         }
 
-        //Sets images in picturebox randomly function  
+        //Sets image in picturebox randomly function  
         private PictureBox getFreeSlot()
         {
             int num;
@@ -111,7 +113,7 @@ namespace matching_game
             return pictureBoxes[num];
         }
 
-        //Iterate the getfreeslots each image
+        //Iterate the getfreeslots each image on images ineumerable
         private void setRandomImages()
         {
             foreach (var image in images)
@@ -191,11 +193,6 @@ namespace matching_game
             clickTimer.Interval = 1000;
             clickTimer.Tick += CLICKTIMER_TICK;
             button1.Enabled = false;
-        }
-
-        private void buttonHover(object sender, EventArgs e)
-        {
-
         }
     }
 }

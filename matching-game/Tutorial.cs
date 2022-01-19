@@ -20,8 +20,6 @@ namespace matching_game
         private void button1_Click(object sender, EventArgs e)
         {
             Close();
-
-            
         }
     }
 }
