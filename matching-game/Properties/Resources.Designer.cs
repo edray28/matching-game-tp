@@ -181,9 +181,29 @@ namespace matching_game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Level1Question {
+            get {
+                object obj = ResourceManager.GetObject("Level1Question", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap level2bg {
             get {
                 object obj = ResourceManager.GetObject("level2bg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Level2Question {
+            get {
+                object obj = ResourceManager.GetObject("Level2Question", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -201,9 +221,9 @@ namespace matching_game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap menulogo {
+        internal static System.Drawing.Bitmap level3Question {
             get {
-                object obj = ResourceManager.GetObject("menulogo", resourceCulture);
+                object obj = ResourceManager.GetObject("level3Question", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -211,9 +231,9 @@ namespace matching_game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap question {
+        internal static System.Drawing.Bitmap menulogo {
             get {
-                object obj = ResourceManager.GetObject("question", resourceCulture);
+                object obj = ResourceManager.GetObject("menulogo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -59,6 +59,8 @@ namespace matching_game
                     timer.Stop();
                     sound.fail.Play();
                     MessageBox.Show("YOU LOSE! Out of time");
+                    sound.fail.Stop();
+                    sound.menusound.Play();
                     ResetImages();
                 }
 
@@ -84,7 +86,7 @@ namespace matching_game
         {
             foreach (var pic in pictureBoxes)
             {
-                pic.Image = Properties.Resources.question;
+                pic.Image = Properties.Resources.Level2Question;
             }
         }
 
