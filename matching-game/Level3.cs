@@ -37,7 +37,7 @@ namespace matching_game
             {
                 return new Image[]
                 {
-                  Properties.Resources.img1,
+                  Properties.Resources.img9,
                   Properties.Resources.img2,
                   Properties.Resources.img3,
                   Properties.Resources.img4,
