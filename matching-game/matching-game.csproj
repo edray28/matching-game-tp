@@ -197,5 +197,23 @@
   <ItemGroup>
     <None Include="Properties\tutorial.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\menulogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\BG.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\BG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\level1bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\level2bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\level3bg.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

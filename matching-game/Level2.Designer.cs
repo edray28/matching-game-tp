@@ -59,11 +59,11 @@ namespace matching_game
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.BackColor = System.Drawing.Color.SteelBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Goodbye Despair", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Window;
-            this.button1.Location = new System.Drawing.Point(155, 360);
+            this.button1.Location = new System.Drawing.Point(190, 443);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(134, 45);
             this.button1.TabIndex = 19;
@@ -74,9 +74,10 @@ namespace matching_game
             // lblTimer
             // 
             this.lblTimer.AutoSize = true;
+            this.lblTimer.BackColor = System.Drawing.Color.Transparent;
             this.lblTimer.Font = new System.Drawing.Font("ObelixPro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimer.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblTimer.Location = new System.Drawing.Point(185, 9);
+            this.lblTimer.Location = new System.Drawing.Point(222, 84);
             this.lblTimer.Name = "lblTimer";
             this.lblTimer.Size = new System.Drawing.Size(84, 19);
             this.lblTimer.TabIndex = 20;
@@ -86,7 +87,7 @@ namespace matching_game
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.CornflowerBlue;
             this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox9.Location = new System.Drawing.Point(330, 251);
+            this.pictureBox9.Location = new System.Drawing.Point(367, 332);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(100, 100);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -98,7 +99,7 @@ namespace matching_game
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.CornflowerBlue;
             this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox10.Location = new System.Drawing.Point(224, 251);
+            this.pictureBox10.Location = new System.Drawing.Point(261, 332);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(100, 100);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -110,7 +111,7 @@ namespace matching_game
             // 
             this.pictureBox11.BackColor = System.Drawing.Color.CornflowerBlue;
             this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox11.Location = new System.Drawing.Point(118, 251);
+            this.pictureBox11.Location = new System.Drawing.Point(155, 332);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(100, 100);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -122,7 +123,7 @@ namespace matching_game
             // 
             this.pictureBox12.BackColor = System.Drawing.Color.CornflowerBlue;
             this.pictureBox12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox12.Location = new System.Drawing.Point(12, 251);
+            this.pictureBox12.Location = new System.Drawing.Point(49, 332);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(100, 100);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -134,7 +135,7 @@ namespace matching_game
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.CornflowerBlue;
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox5.Location = new System.Drawing.Point(330, 145);
+            this.pictureBox5.Location = new System.Drawing.Point(367, 226);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(100, 100);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -146,7 +147,7 @@ namespace matching_game
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.CornflowerBlue;
             this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox6.Location = new System.Drawing.Point(224, 145);
+            this.pictureBox6.Location = new System.Drawing.Point(261, 226);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(100, 100);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -158,7 +159,7 @@ namespace matching_game
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.CornflowerBlue;
             this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox7.Location = new System.Drawing.Point(118, 145);
+            this.pictureBox7.Location = new System.Drawing.Point(155, 226);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(100, 100);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -170,7 +171,7 @@ namespace matching_game
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.CornflowerBlue;
             this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox8.Location = new System.Drawing.Point(12, 145);
+            this.pictureBox8.Location = new System.Drawing.Point(49, 226);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(100, 100);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -182,7 +183,7 @@ namespace matching_game
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.CornflowerBlue;
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Location = new System.Drawing.Point(330, 39);
+            this.pictureBox3.Location = new System.Drawing.Point(367, 120);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(100, 100);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -194,7 +195,7 @@ namespace matching_game
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.CornflowerBlue;
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Location = new System.Drawing.Point(224, 39);
+            this.pictureBox4.Location = new System.Drawing.Point(261, 120);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(100, 100);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -206,7 +207,7 @@ namespace matching_game
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.CornflowerBlue;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Location = new System.Drawing.Point(118, 39);
+            this.pictureBox2.Location = new System.Drawing.Point(155, 120);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 100);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -218,7 +219,7 @@ namespace matching_game
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 39);
+            this.pictureBox1.Location = new System.Drawing.Point(49, 120);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -231,7 +232,9 @@ namespace matching_game
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.ClientSize = new System.Drawing.Size(442, 414);
+            this.BackgroundImage = global::matching_game.Properties.Resources.level2bg;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(519, 511);
             this.Controls.Add(this.lblTimer);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox9);

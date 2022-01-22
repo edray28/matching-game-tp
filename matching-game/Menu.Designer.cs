@@ -29,36 +29,39 @@ namespace matching_game
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.lblMenuTitle = new System.Windows.Forms.Label();
             this.btnCredits = new System.Windows.Forms.Button();
             this.btnLevel3 = new System.Windows.Forms.Button();
             this.btnLevel2 = new System.Windows.Forms.Button();
             this.btnLevel1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnTutorial = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblMenuTitle
             // 
             this.lblMenuTitle.AutoSize = true;
-            this.lblMenuTitle.Font = new System.Drawing.Font("Rockwell", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMenuTitle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblMenuTitle.Location = new System.Drawing.Point(75, 21);
+            this.lblMenuTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblMenuTitle.Font = new System.Drawing.Font("Dark Larch PERSONAL USE ONLY", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMenuTitle.ForeColor = System.Drawing.Color.White;
+            this.lblMenuTitle.Location = new System.Drawing.Point(12, 187);
             this.lblMenuTitle.Name = "lblMenuTitle";
-            this.lblMenuTitle.Size = new System.Drawing.Size(273, 39);
+            this.lblMenuTitle.Size = new System.Drawing.Size(396, 130);
             this.lblMenuTitle.TabIndex = 0;
-            this.lblMenuTitle.Text = "Matching Game";
+            this.lblMenuTitle.Text = "Twice \r\nMatching Game";
+            this.lblMenuTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnCredits
             // 
             this.btnCredits.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnCredits.FlatAppearance.BorderSize = 0;
             this.btnCredits.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCredits.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCredits.Location = new System.Drawing.Point(341, 7);
+            this.btnCredits.Font = new System.Drawing.Font("Dark Larch PERSONAL USE ONLY", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCredits.Location = new System.Drawing.Point(219, 401);
             this.btnCredits.Name = "btnCredits";
-            this.btnCredits.Size = new System.Drawing.Size(59, 52);
+            this.btnCredits.Size = new System.Drawing.Size(109, 52);
             this.btnCredits.TabIndex = 2;
             this.btnCredits.TabStop = false;
             this.btnCredits.Text = "About";
@@ -70,14 +73,14 @@ namespace matching_game
             this.btnLevel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnLevel3.FlatAppearance.BorderSize = 0;
             this.btnLevel3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLevel3.Font = new System.Drawing.Font("Bebas Neue", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLevel3.Font = new System.Drawing.Font("Dark Larch PERSONAL USE ONLY", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLevel3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnLevel3.Location = new System.Drawing.Point(263, 7);
+            this.btnLevel3.Location = new System.Drawing.Point(289, 330);
             this.btnLevel3.Name = "btnLevel3";
-            this.btnLevel3.Size = new System.Drawing.Size(59, 52);
+            this.btnLevel3.Size = new System.Drawing.Size(112, 52);
             this.btnLevel3.TabIndex = 4;
             this.btnLevel3.TabStop = false;
-            this.btnLevel3.Text = "3";
+            this.btnLevel3.Text = "Hard";
             this.btnLevel3.UseVisualStyleBackColor = false;
             this.btnLevel3.Click += new System.EventHandler(this.btnLevel3_Click);
             // 
@@ -86,77 +89,80 @@ namespace matching_game
             this.btnLevel2.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnLevel2.FlatAppearance.BorderSize = 0;
             this.btnLevel2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLevel2.Font = new System.Drawing.Font("Bebas Neue", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLevel2.Font = new System.Drawing.Font("Dark Larch PERSONAL USE ONLY", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLevel2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnLevel2.Location = new System.Drawing.Point(178, 8);
+            this.btnLevel2.Location = new System.Drawing.Point(153, 329);
             this.btnLevel2.Name = "btnLevel2";
-            this.btnLevel2.Size = new System.Drawing.Size(59, 52);
+            this.btnLevel2.Size = new System.Drawing.Size(111, 53);
             this.btnLevel2.TabIndex = 3;
             this.btnLevel2.TabStop = false;
-            this.btnLevel2.Text = "2";
+            this.btnLevel2.Text = "Average";
             this.btnLevel2.UseVisualStyleBackColor = false;
             this.btnLevel2.Click += new System.EventHandler(this.btnLevel2_Click);
             // 
             // btnLevel1
             // 
-            this.btnLevel1.BackColor = System.Drawing.Color.LawnGreen;
+            this.btnLevel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnLevel1.FlatAppearance.BorderSize = 0;
             this.btnLevel1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLevel1.Font = new System.Drawing.Font("Bebas Neue", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLevel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnLevel1.Location = new System.Drawing.Point(90, 8);
+            this.btnLevel1.Font = new System.Drawing.Font("Dark Larch PERSONAL USE ONLY", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLevel1.ForeColor = System.Drawing.Color.Black;
+            this.btnLevel1.Location = new System.Drawing.Point(12, 330);
             this.btnLevel1.Name = "btnLevel1";
-            this.btnLevel1.Size = new System.Drawing.Size(59, 52);
+            this.btnLevel1.Size = new System.Drawing.Size(110, 52);
             this.btnLevel1.TabIndex = 1;
             this.btnLevel1.TabStop = false;
-            this.btnLevel1.Text = "1";
+            this.btnLevel1.Text = "Easy";
             this.btnLevel1.UseVisualStyleBackColor = false;
             this.btnLevel1.Click += new System.EventHandler(this.btnLevel1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::matching_game.Properties.Resources.menulogo;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(130, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(152, 166);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // btnTutorial
             // 
             this.btnTutorial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnTutorial.BackgroundImage = global::matching_game.Properties.Resources.tutorial;
-            this.btnTutorial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnTutorial.FlatAppearance.BorderSize = 0;
             this.btnTutorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTutorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTutorial.Location = new System.Drawing.Point(11, 8);
+            this.btnTutorial.Font = new System.Drawing.Font("Dark Larch PERSONAL USE ONLY", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTutorial.Location = new System.Drawing.Point(81, 400);
             this.btnTutorial.Name = "btnTutorial";
-            this.btnTutorial.Size = new System.Drawing.Size(54, 53);
+            this.btnTutorial.Size = new System.Drawing.Size(110, 53);
             this.btnTutorial.TabIndex = 5;
             this.btnTutorial.TabStop = false;
+            this.btnTutorial.Text = "Tutorial";
             this.btnTutorial.UseVisualStyleBackColor = false;
             this.btnTutorial.Click += new System.EventHandler(this.btnTutorial_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.LightYellow;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.btnCredits);
-            this.panel1.Controls.Add(this.btnLevel3);
-            this.panel1.Controls.Add(this.btnLevel1);
-            this.panel1.Controls.Add(this.btnTutorial);
-            this.panel1.Controls.Add(this.btnLevel2);
-            this.panel1.Location = new System.Drawing.Point(0, 404);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(414, 73);
-            this.panel1.TabIndex = 5;
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(413, 477);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnTutorial);
+            this.Controls.Add(this.btnCredits);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnLevel3);
+            this.Controls.Add(this.btnLevel1);
+            this.Controls.Add(this.btnLevel2);
             this.Controls.Add(this.lblMenuTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Matching Game";
-            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,7 +176,7 @@ namespace matching_game
         private System.Windows.Forms.Button btnLevel2;
         private System.Windows.Forms.Button btnLevel1;
         private System.Windows.Forms.Button btnTutorial;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
