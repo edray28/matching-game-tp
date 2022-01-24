@@ -177,5 +177,11 @@ namespace matching_game
             clickTimer.Tick += CLICKTIMER_TICK;
             button1.Enabled = false;
         }
+
+        private void Level2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            timer.Stop();
+            this.Close();
+        }
     }
 }

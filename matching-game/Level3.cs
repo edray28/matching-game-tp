@@ -16,7 +16,7 @@ namespace matching_game
         {
             InitializeComponent();
         }
-
+        
         Menu sound = new Menu();
         Timer clickTimer = new Timer();
         Timer timer = new Timer { Interval = 1000 };
@@ -176,6 +176,12 @@ namespace matching_game
             clickTimer.Interval = 1000;
             clickTimer.Tick += CLICKTIMER_TICK;
             button1.Enabled = false;
+        }
+
+        private void Level3_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            timer.Stop();
+            this.Close();
         }
     }
 }
