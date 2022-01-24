@@ -16,7 +16,7 @@ namespace matching_game
         {
             InitializeComponent();
         }
-
+        
         Menu sound = new Menu();
         Timer clickTimer = new Timer();
         Timer timer = new Timer { Interval = 1000 };
@@ -44,7 +44,7 @@ namespace matching_game
                   Properties.Resources.img5,
                   Properties.Resources.img6,
                   Properties.Resources.img7,
-                  Properties.Resources.img8
+                  Properties.Resources.img9
                 };
             }
         }
@@ -60,6 +60,8 @@ namespace matching_game
                     timer.Stop();
                     sound.fail.Play();
                     MessageBox.Show("YOU LOSE! Out of time");
+                    sound.fail.Stop();
+                    sound.menusound.Play();
                     ResetImages();
                 }
 
@@ -85,7 +87,7 @@ namespace matching_game
         {
             foreach(var pic in pictureBoxes)
             {
-                pic.Image = Properties.Resources.question;
+                pic.Image = Properties.Resources.level3Question;
             }
         }
         
@@ -174,6 +176,12 @@ namespace matching_game
             clickTimer.Interval = 1000;
             clickTimer.Tick += CLICKTIMER_TICK;
             button1.Enabled = false;
+        }
+
+        private void Level3_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            timer.Stop();
+            this.Close();
         }
     }
 }

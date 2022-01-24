@@ -165,9 +165,6 @@
     <None Include="Resources\img8.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\question.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Properties\Right.png" />
   </ItemGroup>
   <ItemGroup>
@@ -192,10 +189,40 @@
     <None Include="Properties\bg.wav" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\tutorial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\menulogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\BG.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\BG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\level1bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\level2bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\level3bg.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Properties\wrong.wav" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Properties\tutorial.png" />
+    <None Include="Resources\Level1Question.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level2Question.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\level3Question.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img9.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

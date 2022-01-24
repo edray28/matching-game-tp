@@ -69,6 +69,8 @@ namespace matching_game
                     timer.Stop();
                     sound.fail.Play();
                     MessageBox.Show("YOU LOSE! Out of time");
+                    sound.fail.Stop();
+                    sound.menusound.Play();
                     ResetImages();
                 }
                 //realtime seconds
@@ -91,12 +93,12 @@ namespace matching_game
             timer.Start();
         }
 
-        //Hide images in pictureboxes by iterating replacing all resource with another resource (question.png)
+        //Hide images in pictureboxes by iterating replacing all resource with another resource (Level1Question)
         private void HideImages()
         {
             foreach (var pic in pictureBoxes)
             {
-                pic.Image = Properties.Resources.question;
+                pic.Image = Properties.Resources.Level1Question;
             }
         }
 
@@ -193,6 +195,12 @@ namespace matching_game
             clickTimer.Interval = 1000;
             clickTimer.Tick += CLICKTIMER_TICK;
             button1.Enabled = false;
+        }
+
+        private void Level1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            timer.Stop();
+            this.Close();
         }
     }
 }

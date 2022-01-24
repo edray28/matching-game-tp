@@ -18,6 +18,7 @@ namespace matching_game
         public SoundPlayer victory = new SoundPlayer(Properties.Resources.correct);
         public SoundPlayer fail = new SoundPlayer(Properties.Resources.wrong1);
 
+        
         public Menu()
         {
             InitializeComponent();

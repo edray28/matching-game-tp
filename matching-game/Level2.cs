@@ -38,7 +38,7 @@ namespace matching_game
             {
                 return new Image[]
                 {
-                  Properties.Resources.img1,
+                  Properties.Resources.img9,
                   Properties.Resources.img2,
                   Properties.Resources.img3,
                   Properties.Resources.img4,
@@ -59,6 +59,8 @@ namespace matching_game
                     timer.Stop();
                     sound.fail.Play();
                     MessageBox.Show("YOU LOSE! Out of time");
+                    sound.fail.Stop();
+                    sound.menusound.Play();
                     ResetImages();
                 }
 
@@ -84,7 +86,7 @@ namespace matching_game
         {
             foreach (var pic in pictureBoxes)
             {
-                pic.Image = Properties.Resources.question;
+                pic.Image = Properties.Resources.Level2Question;
             }
         }
 
@@ -174,6 +176,12 @@ namespace matching_game
             clickTimer.Interval = 1000;
             clickTimer.Tick += CLICKTIMER_TICK;
             button1.Enabled = false;
+        }
+
+        private void Level2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            timer.Stop();
+            this.Close();
         }
     }
 }
