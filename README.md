@@ -2,7 +2,7 @@
 
 <h2>Twice Matching Game ♥</h2>
 <code>For Prog Lang BSIT504</code>
-  <div><h2><a href="https://github.com/edray28/matching-game-tp/releases/tag/Beta" > Download </a></h2></div>
+  <div><h2><a href="https://github.com/edray28/matching-game-tp/releases/download/Beta/matching-game.zip" > Download </a></h2></div>
 <h2><code> Screenshots </code></h2>
 <center>
 <ol> 
