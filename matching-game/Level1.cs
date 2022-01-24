@@ -52,7 +52,7 @@ namespace matching_game
                 {
                   Properties.Resources.img1,
                   Properties.Resources.img2,
-                  Properties.Resources.img8
+                  Properties.Resources.img3
                 };
             }
         }
