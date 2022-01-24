@@ -61,11 +61,11 @@ namespace matching_game
             // 
             this.button1.BackColor = System.Drawing.Color.SteelBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Goodbye Despair", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Georgia", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Window;
-            this.button1.Location = new System.Drawing.Point(808, 13);
+            this.button1.Location = new System.Drawing.Point(838, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 74);
+            this.button1.Size = new System.Drawing.Size(134, 79);
             this.button1.TabIndex = 19;
             this.button1.Text = "Start Game";
             this.button1.UseVisualStyleBackColor = false;
@@ -75,11 +75,11 @@ namespace matching_game
             // 
             this.lblTimer.AutoSize = true;
             this.lblTimer.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimer.Font = new System.Drawing.Font("ObelixPro", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTimer.Font = new System.Drawing.Font("Georgia", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimer.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblTimer.Location = new System.Drawing.Point(24, 33);
+            this.lblTimer.Location = new System.Drawing.Point(12, 22);
             this.lblTimer.Name = "lblTimer";
-            this.lblTimer.Size = new System.Drawing.Size(125, 30);
+            this.lblTimer.Size = new System.Drawing.Size(202, 56);
             this.lblTimer.TabIndex = 20;
             this.lblTimer.Text = "120 sec";
             // 
